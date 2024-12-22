@@ -77,15 +77,19 @@
 		border-radius:5px;
 		
 		}
-		#review:hover,#links:hover,#btn:hover{
-		transform:scale(1.1);
+		#rev{
+			position:relative;
+			top:-100px;
+			
+		}
+		#links:hover{
 		background-color:lightGreen;
 		
 		}
 		#static, #dynamic, #e-com{
 		position:relative;
 		top:-85px;
-		box-shadow: 3px 5px 5px lightblue;
+		 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 		font-size:14px;
 		}
 		#ser{
@@ -102,4 +106,55 @@
 		hr{
 			color:Green;
 		}
-   
+		 .slideshow-container {
+      width: 80%;
+      max-width: 600px;
+      position: relative;
+      overflow: hidden;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+	  margin-top:-80px;
+	  font-size:12px;
+    }
+
+    .slide {
+      display: none;
+      text-align: center;
+    }
+
+    .active {
+      display: block;
+    }
+
+    .slide p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .slide h3 {
+      font-size: 20px;
+      margin: 10px 0;
+      color: #0078d7;
+    }
+
+    .navigation {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .dot {
+      height: 12px;
+      width: 12px;
+      margin: 0 5px;
+      background-color: #ddd;
+      border-radius: 50%;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .dot.active {
+      background-color: #0078d7;
+    }
