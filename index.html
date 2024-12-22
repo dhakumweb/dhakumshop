@@ -107,21 +107,21 @@
     </section>
 	<section id="reviews">
 	<h2 class="text-dark" id="rev">Reviews</h2>
-	<center><div class="slideshow-container">
+	<center><div class="slideshow-container text-secondary">
     <div class="slide active">
-      <p>"I needed a website that could cater to my business’s specific requirements, and Dhakum delivered a perfect solution. They provided tailored options, incorporated all my suggestions, and ensured everything worked seamlessly. Truly a customer-first company."</p>
+      <p class="text-secondary" style="font-size:14px">"I needed a website that could cater to my business’s specific requirements, and Dhakum delivered a perfect solution. They provided tailored options, incorporated all my suggestions, and ensured everything worked seamlessly."</p>
       <h3>- Gunaa</h3>
     </div>
     <div class="slide">
-      <p>"Not only did Dhakum create a beautiful website, but they also optimized it for search engines. Thanks to their expertise, my website’s traffic has significantly increased, and my business is seeing more leads."</p>
+      <p class="text-secondary" style="font-size:14px">"Not only did Dhakum create a beautiful website, but they also optimized it for search engines. Thanks to their expertise, my website’s traffic has significantly increased, and my business is seeing more leads."</p>
       <h3>- Sarath</h3>
     </div>
     <div class="slide">
-      <p>"The value I got for my investment with Dhakum is incredible. They offer premium web development services at a reasonable price without compromising quality. I couldn’t be happier with the results."</p>
+      <p class="text-secondary" style="font-size:14px">"The value I got for my investment with Dhakum is incredible. They offer premium web development services at a reasonable price without compromising quality. I couldn’t be happier with the results."</p>
       <h3>- MohanRaj</h3>
     </div>
 	<div class="slide">
-      <p>"I approached Dhakum with a tight deadline, and they delivered beyond my expectations! The website was up and running ahead of schedule, and the quality of work was excellent. Their ability to handle pressure and deliver outstanding results is commendable."</p>
+      <p class="text-secondary" style="font-size:14px">"I approached Dhakum with a tight deadline, and they delivered beyond my expectations! The website was up and running ahead of schedule, and the quality of work was excellent."</p>
       <h3>- Nagarajan</h3>
     </div>
     <div class="navigation">
@@ -132,15 +132,14 @@
     </div>
 	</div></center>
 	</section>
-
     <section id="about" class="bg-light">
         <h2 class="text-dark">About Us</h2>
-        <center>
-		<div id="about-card" class="service-card card-img-top" style="box-shadow: 3px 5px 5px lightblue;">
+        
+		<div id="about-card" class="service-card card-img-top" style="box-shadow: 0 4px 8px lightGreen;margin-left:-0px">
 		<img src="images/add1.webp" width="200px" height="200px"/>
 		<p id="abouts" class="card-text"> Welcome to Dhakum, where innovation meets expertise in custom web development. We are a passionate team of skilled developers and designers dedicated to transforming your ideas into powerful, user-centric digital solutions.</p>
 		</div>
-		</center>
+	
 		<br>
 	<div class="row" id="Privacy">
 	<div class="col-1"></div>
@@ -178,7 +177,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 	<script>
 	const bannerImages = [
-    "images/services.webp", // Replace with your image URLs
+    "images/services.webp",
     "images/services1.png",
     "images/services2.png",
     "images/add.webp"
@@ -189,13 +188,12 @@ const bannerImageElement = document.getElementById("bannerImage");
 
 function updateBanner() {
     bannerImageElement.src = bannerImages[currentIndex];
-    currentIndex = (currentIndex + 1) % bannerImages.length; // Loop back to the first image
+    currentIndex = (currentIndex + 1) % bannerImages.length; 
 }
 
-// Initial setup
+
 bannerImageElement.src = bannerImages[0];
 
-// Change slide every 3 seconds (3000 milliseconds)
 setInterval(updateBanner, 2000);
  let currentSlide = 0;
     const slides = document.querySelectorAll('.slide');
@@ -209,11 +207,10 @@ setInterval(updateBanner, 2000);
       dots[currentSlide].classList.add('active');
     }
 
-    // Auto-switch slides every 5 seconds
     setInterval(() => {
       let nextSlide = (currentSlide + 1) % slides.length;
       showSlide(nextSlide);
-    }, 5000);
+    }, 3000);
 	</script>
 </body>
 </html>

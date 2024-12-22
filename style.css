@@ -89,7 +89,7 @@
 		#static, #dynamic, #e-com{
 		position:relative;
 		top:-85px;
-		 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		box-shadow: 0 4px 8px lightGreen;
 		font-size:14px;
 		}
 		#ser{
@@ -108,16 +108,14 @@
 		}
 		 .slideshow-container {
       width: 80%;
-	  height:250px;
       max-width: 600px;
       position: relative;
       overflow: hidden;
       background-color: #fff;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 8px lightGreen;
       padding: 20px;
 	  margin-top:-80px;
-	  font-size:12px;
     }
 
     .slide {
